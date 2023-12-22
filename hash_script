@@ -1,0 +1,4 @@
+#!/bin/bash
+input=$1
+hash=$(echo -n $input | sha256sum | cut -d ' ' -f 1)
+echo $hash
